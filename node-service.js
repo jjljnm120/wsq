@@ -1,7 +1,7 @@
 ﻿var http = require('http');
 var url = require('url');
 var path = require('path');
-
+沙雕
 //创建server
 var server = http.createServer(function(req, res){
 	//获得请求路径
