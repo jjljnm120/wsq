@@ -1,0 +1,20 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: consumer-feign-hystrix
+  devtools:
+    restart:
+      enabled: true #设置开启热部署
+  freemarker:
+    cache: false  #页面不加载缓存,自u该即时生效
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:password123@localhost:8761/eureka
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
